@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+
+# A simple script for testing
+ProperGreetingoftheDay="Good Morning Ladies and Gentleman,"
+WhoisSpeaking="this is LCpl Gonzalez Escobar."
+
+# Define a variable using arithmetic expression
+age=$(((7+4)*2))
+AgeofSpeaker="I am $age years old,"
+
+# Next we can define the height using the BASH Calculator for decimal digits
+height="$(echo "scale=2;(7.6)/4" | bc)"
+HeightofSpeaker="and $height meters tall."
+
+# Next we will define the weight of the speaker reading the user input
+echo "Enter your weight"
+read weight
+WeightofSpeaker="My current weight is $weight lbs."
+
+# Now we define the action where we will use this variables
+echo $ProperGreetingoftheDay $WhoisSpeaking $AgeofSpeaker $HeightofSpeaker $WeightofSpeaker
